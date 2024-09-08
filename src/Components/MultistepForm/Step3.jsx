@@ -1,50 +1,47 @@
-import React, { useState } from 'react';
-import { User, Users } from 'lucide-react';
-import { FaMagnet, FaMars, FaVenus } from 'react-icons/fa';
-import { FaM, FaMarsAndVenus } from 'react-icons/fa6';
+import React from 'react';
+import { FaMars, FaVenus } from 'react-icons/fa';
 
-const Step3 = () => {
-  const [selected, setSelected] = useState(null);
+const Step3 = ({ selected, setSelected }) => {
+    const handleSelect = (option) => {
+        setSelected(option);
+    };
 
-  const handleSelect = (option) => {
-    setSelected(option);
-  };
-
-  return (
-    <div className="flex items-center justify-center py-20">
-      <div className="w-full max-w-3xl p-6 md:p-8">
-        <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-center">What's is your sex ?</h2>
-        <div className="flex flex-col md:flex-row gap-6">
-          <SelectionBox
-            icon={<FaMars size={64} />}
-            title="Male"
-            isSelected={selected === 'male'}
-            onSelect={() => handleSelect('male')}
-          />
-          <SelectionBox
-            icon={<FaVenus size={64} />}
-            title="Female"
-            isSelected={selected === 'female'}
-            onSelect={() => handleSelect('female')}
-          />
+    return (
+        <div className="flex flex-col items-center justify-center h-full w-full">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6 text-center">What's your sex?</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-3xl">
+                <SelectionBox
+                    icon={<FaMars className="w-16 h-16" />}
+                    title="Male"
+                    subtitle="Biological sex assigned at birth"
+                    isSelected={selected === 'male'}
+                    onSelect={() => handleSelect('male')}
+                />
+                <SelectionBox
+                    icon={<FaVenus className="w-16 h-16" />}
+                    title="Female"
+                    subtitle="Biological sex assigned at birth"
+                    isSelected={selected === 'female'}
+                    onSelect={() => handleSelect('female')}
+                />
+            </div>
         </div>
-      </div>
-    </div>
-  );
+    );
 };
 
-const SelectionBox = ({ icon, title, isSelected, onSelect }) => {
-  return (
-    <div
-      className={`flex flex-col items-center p-6 border-2 rounded-lg cursor-pointer transition-colors ${
-        isSelected ? 'border-blue-500 bg-blue-50' : 'border-gray-200 hover:border-blue-300'
-      } flex-1`}
-      onClick={onSelect}
-    >
-      <div className="text-blue-500 mb-4">{icon}</div>
-      <h3 className="text-xl font-semibold mb-2">{title}</h3>
-    </div>
-  );
+const SelectionBox = ({ icon, title, subtitle, isSelected, onSelect }) => {
+    return (
+        <button
+            className={`flex flex-col items-center justify-center p-8 border-4 rounded-xl transition-all duration-300 ${
+                isSelected ? 'border-[#245FFF] bg-blue-50' : 'border-gray-300 hover:border-[#245FFF]'
+            }`}
+            onClick={onSelect}
+        >
+            <div className="mb-4">{icon}</div>
+            <h3 className="text-2xl font-semibold mb-2">{title}</h3>
+            <p className="text-lg text-gray-600">{subtitle}</p>
+        </button>
+    );
 };
 
 export default Step3;
