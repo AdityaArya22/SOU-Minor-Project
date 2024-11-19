@@ -1,18 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import { Search } from 'lucide-react';
-
-// Import the symptoms from the JSON file
+import {addSymptoms} from "../../SymtomsSlice"
+ // Import the symptoms from the JSON file
 import symptomsData from './symptoms-list.json';
-
+import { useDispatch, useSelector } from 'react-redux';
+  
+  
 const Step4 = ({ onSymptomSelect, selectedSymptoms }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [symptoms, setSymptoms] = useState(selectedSymptoms || []);
-
+  const state = useSelector(state =>state.symptoms)
   // Extract symptom names from the imported JSON
   const allSymptoms = symptomsData.symptoms.map(symptom => symptom.name);
+  const dispatch = useDispatch()
 
   useEffect(() => {
     onSymptomSelect(symptoms);
+    
   }, [symptoms, onSymptomSelect]);
 
   const handleSearch = (e) => {
@@ -24,9 +28,8 @@ const Step4 = ({ onSymptomSelect, selectedSymptoms }) => {
   );
 
   const addSymptom = (symptom) => {
-    if (!symptoms.includes(symptom)) {
-      setSymptoms([...symptoms, symptom]);
-    }
+    dispatch(addSymptoms(symptom))
+    setSymptoms((prevSymptoms) => [...prevSymptoms, symptom]); // Update local state
     setSearchTerm('');
   };
 
@@ -54,7 +57,7 @@ const Step4 = ({ onSymptomSelect, selectedSymptoms }) => {
               <li 
                 key={index} 
                 className="p-2 hover:bg-gray-100 cursor-pointer text-sm md:text-base"
-                onClick={() => addSymptom(symptom)}
+                onClick={()=>{addSymptom(symptom)}}
               >
                 {symptom}
               </li>

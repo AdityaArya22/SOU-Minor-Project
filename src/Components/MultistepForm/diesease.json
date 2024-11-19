@@ -1,189 +1,188 @@
 {
-    "relatedDiseases": [
-      {
-        "disease": "Migraine",
-        "symptoms": [1, 6, 53]
-      },
-      {
-        "disease": "Common Cold",
-        "symptoms": [3, 13, 14, 50]
-      },
-      {
-        "disease": "COVID-19",
-        "symptoms": [3, 4, 5, 9]
-      },
-      {
-        "disease": "Gastroenteritis",
-        "symptoms": [7, 8, 10, 25]
-      },
-      {
-        "disease": "Hypertension",
-        "symptoms": [31, 54, 52]
-      },
-      {
-        "disease": "Diabetes",
-        "symptoms": [35, 36, 28, 25]
-      },
-      {
-        "disease": "Asthma",
-        "symptoms": [9, 13, 52]
-      },
-      {
-        "disease": "Arthritis",
-        "symptoms": [12, 38, 37]
-      },
-      {
-        "disease": "Anxiety Disorder",
-        "symptoms": [21, 42, 27, 30]
-      },
-      {
-        "disease": "Depression",
-        "symptoms": [22, 4, 28, 42]
-      },
-      {
-        "disease": "Allergic Rhinitis",
-        "symptoms": [14, 49, 50, 15]
-      },
-      {
-        "disease": "Skin Allergy",
-        "symptoms": [15, 16, 46]
-      },
-      {
-        "disease": "Hepatitis",
-        "symptoms": [3, 10, 34, 20]
-      },
-      {
-        "disease": "Pneumonia",
-        "symptoms": [3, 5, 9, 52]
-      },
-      {
-        "disease": "Heart Attack",
-        "symptoms": [2, 9, 52, 31]
-      },
-      {
-        "disease": "Stroke",
-        "symptoms": [1, 19, 57, 30]
-      },
-      {
-        "disease": "Tuberculosis",
-        "symptoms": [3, 5, 13, 20]
-      },
-      {
-        "disease": "Glaucoma",
-        "symptoms": [17, 56, 19]
-      },
-      {
-        "disease": "Conjunctivitis",
-        "symptoms": [47, 50, 14]
-      },
-      {
-        "disease": "Otitis Media",
-        "symptoms": [48, 18, 59]
-      },
-      {
-        "disease": "Urinary Tract Infection",
-        "symptoms": [36, 35, 10]
-      },
-      {
-        "disease": "Hypothyroidism",
-        "symptoms": [29, 41, 46, 32]
-      },
-      {
-        "disease": "Hyperthyroidism",
-        "symptoms": [28, 44, 31, 35]
-      },
-      {
-        "disease": "Rheumatoid Arthritis",
-        "symptoms": [12, 37, 38, 44]
-      },
-      {
-        "disease": "Lupus",
-        "symptoms": [16, 20, 12, 38]
-      },
-      {
-        "disease": "Anemia",
-        "symptoms": [4, 28, 6, 37]
-      },
-      {
-        "disease": "Parkinson's Disease",
-        "symptoms": [30, 55, 57, 19]
-      },
-      {
-        "disease": "Eczema",
-        "symptoms": [16, 46, 15]
-      },
-      {
-        "disease": "Psoriasis",
-        "symptoms": [16, 44, 46]
-      },
-      {
-        "disease": "Gout",
-        "symptoms": [12, 10, 37]
-      },
-      {
-        "disease": "Sinusitis",
-        "symptoms": [14, 49, 13, 50]
-      },
-      {
-        "disease": "Bronchitis",
-        "symptoms": [5, 9, 13, 50]
-      },
-      {
-        "disease": "Meningitis",
-        "symptoms": [1, 3, 19, 43]
-      },
-      {
-        "disease": "Alzheimer's Disease",
-        "symptoms": [43, 42, 57]
-      },
-      {
-        "disease": "Celiac Disease",
-        "symptoms": [10, 25, 33, 40]
-      },
-      {
-        "disease": "Irritable Bowel Syndrome",
-        "symptoms": [10, 33, 58]
-      },
-      {
-        "disease": "Kidney Stones",
-        "symptoms": [10, 36, 8, 2]
-      },
-      {
-        "disease": "Gallstones",
-        "symptoms": [10, 8, 35]
-      },
-      {
-        "disease": "Pancreatitis",
-        "symptoms": [10, 8, 9, 5]
-      },
-      {
-        "disease": "Leukemia",
-        "symptoms": [4, 20, 60, 28]
-      },
-      {
-        "disease": "HIV/AIDS",
-        "symptoms": [3, 9, 20, 34]
-      },
-      {
-        "disease": "Measles",
-        "symptoms": [3, 16, 50, 47]
-      },
-      {
-        "disease": "Chickenpox",
-        "symptoms": [3, 16, 15, 46]
-      },
-      {
-        "disease": "Dengue Fever",
-        "symptoms": [3, 4, 28, 60]
-      },
-      {
-        "disease": "Malaria",
-        "symptoms": [3, 4, 9, 28]
-      },
-      {
-        "disease": "Typhoid Fever",
-        "symptoms": [3, 4, 25, 10]
-      }
-    ]
-  }
-  
+  "relatedDiseases": [
+    {
+      "disease": "Migraine",
+      "symptoms": ["Headache", "Dizziness", "Frequent Headaches"]
+    },
+    {
+      "disease": "Common Cold",
+      "symptoms": ["Fever", "Sore Throat", "Runny Nose", "Sneezing"]
+    },
+    {
+      "disease": "COVID-19",
+      "symptoms": ["Fever", "Fatigue", "Cough", "Shortness of Breath"]
+    },
+    {
+      "disease": "Gastroenteritis",
+      "symptoms": ["Nausea", "Vomiting", "Abdominal Pain", "Loss of Appetite"]
+    },
+    {
+      "disease": "Hypertension",
+      "symptoms": ["Increased Heart Rate", "Chest Tightness", "Frequent Headaches"]
+    },
+    {
+      "disease": "Diabetes",
+      "symptoms": ["Excessive Thirst", "Frequent Urination", "Loss of Appetite", "Abdominal Pain"]
+    },
+    {
+      "disease": "Asthma",
+      "symptoms": ["Shortness of Breath", "Sore Throat", "Chest Tightness"]
+    },
+    {
+      "disease": "Arthritis",
+      "symptoms": ["Swollen Joints", "Muscle Weakness", "Joint Stiffness"]
+    },
+    {
+      "disease": "Anxiety Disorder",
+      "symptoms": ["Anxiety", "Difficulty Concentrating", "Insomnia", "Tremors"]
+    },
+    {
+      "disease": "Depression",
+      "symptoms": ["Depression", "Fatigue", "Loss of Appetite", "Difficulty Concentrating"]
+    },
+    {
+      "disease": "Allergic Rhinitis",
+      "symptoms": ["Runny Nose", "Nasal Congestion", "Sneezing", "Itchy Skin"]
+    },
+    {
+      "disease": "Skin Allergy",
+      "symptoms": ["Itchy Skin", "Skin Rash", "Dry Skin"]
+    },
+    {
+      "disease": "Hepatitis",
+      "symptoms": ["Fever", "Abdominal Pain", "Yellowing of Skin", "Swollen Lymph Nodes"]
+    },
+    {
+      "disease": "Pneumonia",
+      "symptoms": ["Fever", "Cough", "Shortness of Breath", "Chest Tightness"]
+    },
+    {
+      "disease": "Heart Attack",
+      "symptoms": ["Chest Pain", "Shortness of Breath", "Chest Tightness", "Increased Heart Rate"]
+    },
+    {
+      "disease": "Stroke",
+      "symptoms": ["Headache", "Numbness", "Loss of Balance", "Difficulty Concentrating"]
+    },
+    {
+      "disease": "Tuberculosis",
+      "symptoms": ["Fever", "Cough", "Sore Throat", "Swollen Lymph Nodes"]
+    },
+    {
+      "disease": "Glaucoma",
+      "symptoms": ["Blurred Vision", "Light Sensitivity", "Loss of Balance"]
+    },
+    {
+      "disease": "Conjunctivitis",
+      "symptoms": ["Red Eyes", "Sneezing", "Runny Nose"]
+    },
+    {
+      "disease": "Otitis Media",
+      "symptoms": ["Ear Pain", "Hearing Loss", "Frequent Nosebleeds"]
+    },
+    {
+      "disease": "Urinary Tract Infection",
+      "symptoms": ["Frequent Urination", "Excessive Thirst", "Abdominal Pain"]
+    },
+    {
+      "disease": "Hypothyroidism",
+      "symptoms": ["Weight Gain", "Cold Hands and Feet", "Dry Skin", "Muscle Weakness"]
+    },
+    {
+      "disease": "Hyperthyroidism",
+      "symptoms": ["Loss of Appetite", "Excessive Sweating", "Increased Heart Rate", "Excessive Thirst"]
+    },
+    {
+      "disease": "Rheumatoid Arthritis",
+      "symptoms": ["Swollen Joints", "Muscle Weakness", "Joint Stiffness", "Excessive Sweating"]
+    },
+    {
+      "disease": "Lupus",
+      "symptoms": ["Skin Rash", "Swollen Lymph Nodes", "Swollen Joints", "Muscle Weakness"]
+    },
+    {
+      "disease": "Anemia",
+      "symptoms": ["Fatigue", "Loss of Appetite", "Dizziness", "Muscle Weakness"]
+    },
+    {
+      "disease": "Parkinson's Disease",
+      "symptoms": ["Tremors", "Loss of Balance", "Difficulty Concentrating", "Memory Loss"]
+    },
+    {
+      "disease": "Eczema",
+      "symptoms": ["Itchy Skin", "Dry Skin", "Skin Rash"]
+    },
+    {
+      "disease": "Psoriasis",
+      "symptoms": ["Skin Rash", "Excessive Sweating", "Dry Skin"]
+    },
+    {
+      "disease": "Gout",
+      "symptoms": ["Swollen Joints", "Abdominal Pain", "Muscle Weakness"]
+    },
+    {
+      "disease": "Sinusitis",
+      "symptoms": ["Runny Nose", "Nasal Congestion", "Sore Throat", "Sneezing"]
+    },
+    {
+      "disease": "Bronchitis",
+      "symptoms": ["Cough", "Shortness of Breath", "Sore Throat", "Sneezing"]
+    },
+    {
+      "disease": "Meningitis",
+      "symptoms": ["Headache", "Fever", "Numbness", "Difficulty Concentrating"]
+    },
+    {
+      "disease": "Alzheimer's Disease",
+      "symptoms": ["Difficulty Concentrating", "Memory Loss", "Loss of Balance"]
+    },
+    {
+      "disease": "Celiac Disease",
+      "symptoms": ["Abdominal Pain", "Loss of Appetite", "Difficulty Swallowing", "Persistent Hiccups"]
+    },
+    {
+      "disease": "Irritable Bowel Syndrome",
+      "symptoms": ["Abdominal Pain", "Difficulty Swallowing", "Blood in Stool"]
+    },
+    {
+      "disease": "Kidney Stones",
+      "symptoms": ["Abdominal Pain", "Frequent Urination", "Vomiting", "Chest Pain"]
+    },
+    {
+      "disease": "Gallstones",
+      "symptoms": ["Abdominal Pain", "Vomiting", "Excessive Thirst"]
+    },
+    {
+      "disease": "Pancreatitis",
+      "symptoms": ["Abdominal Pain", "Vomiting", "Shortness of Breath", "Cough"]
+    },
+    {
+      "disease": "Leukemia",
+      "symptoms": ["Fatigue", "Swollen Lymph Nodes", "Weight Loss", "Unexplained Bruising"]
+    },
+    {
+      "disease": "HIV/AIDS",
+      "symptoms": ["Fever", "Shortness of Breath", "Swollen Lymph Nodes", "Yellowing of Skin"]
+    },
+    {
+      "disease": "Measles",
+      "symptoms": ["Fever", "Skin Rash", "Sneezing", "Red Eyes"]
+    },
+    {
+      "disease": "Chickenpox",
+      "symptoms": ["Fever", "Skin Rash", "Itchy Skin", "Dry Skin"]
+    },
+    {
+      "disease": "Dengue Fever",
+      "symptoms": ["Fever", "Fatigue", "Weight Loss", "Unexplained Bruising"]
+    },
+    {
+      "disease": "Malaria",
+      "symptoms": ["Fever", "Fatigue", "Shortness of Breath", "Weight Loss"]
+    },
+    {
+      "disease": "Typhoid Fever",
+      "symptoms": ["Fever", "Fatigue", "Loss of Appetite", "Abdominal Pain"]
+    }
+  ]
+}   
