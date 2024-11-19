@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Search } from 'lucide-react';
 
+// Import the symptoms from the JSON file
+import symptomsData from './symptoms-list.json';
+
 const Step4 = ({ onSymptomSelect, selectedSymptoms }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [symptoms, setSymptoms] = useState(selectedSymptoms || []);
 
-  // Mock symptom list - in a real app, this would come from an API or larger dataset
-  const allSymptoms = [
-    'Headache', 'Fever', 'Cough', 'Fatigue', 'Shortness of breath',
-    'Muscle ache', 'Loss of taste or smell', 'Sore throat', 'Nausea'
-  ];
+  // Extract symptom names from the imported JSON
+  const allSymptoms = symptomsData.symptoms.map(symptom => symptom.name);
 
   useEffect(() => {
     onSymptomSelect(symptoms);

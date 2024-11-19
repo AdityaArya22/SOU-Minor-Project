@@ -1,0 +1,364 @@
+{
+    "symptoms": [
+        {
+            "symptomId": 1,
+            "name": "Headache",
+            "category": "Neurological",
+            "description": "Pain or discomfort in the head region"
+        },
+        {
+            "symptomId": 2,
+            "name": "Chest Pain",
+            "category": "Cardiovascular",
+            "description": "Discomfort or pain in the chest area"
+        },
+        {
+            "symptomId": 3,
+            "name": "Fever",
+            "category": "Systemic",
+            "description": "Elevated body temperature above normal range"
+        },
+        {
+            "symptomId": 4,
+            "name": "Fatigue",
+            "category": "General",
+            "description": "Extreme tiredness and lack of energy"
+        },
+        {
+            "symptomId": 5,
+            "name": "Cough",
+            "category": "Respiratory",
+            "description": "Involuntary expulsion of air from lungs"
+        },
+        {
+            "symptomId": 6,
+            "name": "Dizziness",
+            "category": "Neurological",
+            "description": "Sensation of spinning or losing balance"
+        },
+        {
+            "symptomId": 7,
+            "name": "Nausea",
+            "category": "Digestive",
+            "description": "Feeling of sickness with an inclination to vomit"
+        },
+        {
+            "symptomId": 8,
+            "name": "Vomiting",
+            "category": "Digestive",
+            "description": "Expelling contents of the stomach through the mouth"
+        },
+        {
+            "symptomId": 9,
+            "name": "Shortness of Breath",
+            "category": "Respiratory",
+            "description": "Difficulty breathing or feeling of breathlessness"
+        },
+        {
+            "symptomId": 10,
+            "name": "Abdominal Pain",
+            "category": "Digestive",
+            "description": "Discomfort or pain in the abdominal area"
+        },
+        {
+            "symptomId": 11,
+            "name": "Back Pain",
+            "category": "Musculoskeletal",
+            "description": "Discomfort or pain in the back region"
+        },
+        {
+            "symptomId": 12,
+            "name": "Swollen Joints",
+            "category": "Musculoskeletal",
+            "description": "Enlarged or inflamed joints"
+        },
+        {
+            "symptomId": 13,
+            "name": "Sore Throat",
+            "category": "Respiratory",
+            "description": "Pain or irritation in the throat"
+        },
+        {
+            "symptomId": 14,
+            "name": "Runny Nose",
+            "category": "Respiratory",
+            "description": "Excessive nasal discharge"
+        },
+        {
+            "symptomId": 15,
+            "name": "Itchy Skin",
+            "category": "Dermatological",
+            "description": "Unpleasant sensation on the skin causing a desire to scratch"
+        },
+        {
+            "symptomId": 16,
+            "name": "Skin Rash",
+            "category": "Dermatological",
+            "description": "Change in skin color, texture, or appearance"
+        },
+        {
+            "symptomId": 17,
+            "name": "Blurred Vision",
+            "category": "Ophthalmological",
+            "description": "Loss of sharpness in eyesight"
+        },
+        {
+            "symptomId": 18,
+            "name": "Hearing Loss",
+            "category": "Otolaryngological",
+            "description": "Partial or complete loss of hearing"
+        },
+        {
+            "symptomId": 19,
+            "name": "Numbness",
+            "category": "Neurological",
+            "description": "Loss of sensation in a part of the body"
+        },
+        {
+            "symptomId": 20,
+            "name": "Swollen Lymph Nodes",
+            "category": "Systemic",
+            "description": "Enlargement of lymph nodes"
+        },
+            {
+                "symptomId": 21,
+                "name": "Anxiety",
+                "category": "Psychological",
+                "description": "Feelings of nervousness, worry, or unease"
+            },
+            {
+                "symptomId": 22,
+                "name": "Depression",
+                "category": "Psychological",
+                "description": "Persistent feelings of sadness and lack of interest"
+            },
+            {
+                "symptomId": 23,
+                "name": "Swelling",
+                "category": "General",
+                "description": "Enlargement of a body part due to fluid accumulation"
+            },
+            {
+                "symptomId": 24,
+                "name": "Hair Loss",
+                "category": "Dermatological",
+                "description": "Loss of hair from the scalp or other body areas"
+            },
+            {
+                "symptomId": 25,
+                "name": "Loss of Appetite",
+                "category": "Digestive",
+                "description": "Decreased desire to eat"
+            },
+            {
+                "symptomId": 26,
+                "name": "Cold Sweats",
+                "category": "Systemic",
+                "description": "Sudden sweating associated with cold skin"
+            },
+            {
+                "symptomId": 27,
+                "name": "Insomnia",
+                "category": "Psychological",
+                "description": "Difficulty falling or staying asleep"
+            },
+            {
+                "symptomId": 28,
+                "name": "Weight Loss",
+                "category": "General",
+                "description": "Unintentional decrease in body weight"
+            },
+            {
+                "symptomId": 29,
+                "name": "Weight Gain",
+                "category": "General",
+                "description": "Unintentional increase in body weight"
+            },
+            {
+                "symptomId": 30,
+                "name": "Tremors",
+                "category": "Neurological",
+                "description": "Involuntary rhythmic muscle contractions"
+            },
+            {
+                "symptomId": 31,
+                "name": "Heart Palpitations",
+                "category": "Cardiovascular",
+                "description": "Irregular or rapid heartbeats"
+            },
+            {
+                "symptomId": 32,
+                "name": "Dry Mouth",
+                "category": "General",
+                "description": "Abnormal dryness of the mouth"
+            },
+            {
+                "symptomId": 33,
+                "name": "Difficulty Swallowing",
+                "category": "Digestive",
+                "description": "Trouble moving food or liquid down the throat"
+            },
+            {
+                "symptomId": 34,
+                "name": "Yellowing of Skin",
+                "category": "Systemic",
+                "description": "Yellow discoloration of skin or eyes (jaundice)"
+            },
+            {
+                "symptomId": 35,
+                "name": "Excessive Thirst",
+                "category": "Systemic",
+                "description": "Unusually strong desire to drink fluids"
+            },
+            {
+                "symptomId": 36,
+                "name": "Frequent Urination",
+                "category": "Urological",
+                "description": "Needing to urinate more often than usual"
+            },
+            {
+                "symptomId": 37,
+                "name": "Muscle Weakness",
+                "category": "Musculoskeletal",
+                "description": "Reduced strength in the muscles"
+            },
+            {
+                "symptomId": 38,
+                "name": "Joint Stiffness",
+                "category": "Musculoskeletal",
+                "description": "Difficulty moving joints due to tightness"
+            },
+            {
+                "symptomId": 39,
+                "name": "Burning Sensation",
+                "category": "Neurological",
+                "description": "Painful or tingling feeling on the skin"
+            },
+            {
+                "symptomId": 40,
+                "name": "Persistent Hiccups",
+                "category": "Digestive",
+                "description": "Involuntary spasms of the diaphragm causing hiccup sounds"
+            },
+                {
+                    "symptomId": 41,
+                    "name": "Cold Hands and Feet",
+                    "category": "Circulatory",
+                    "description": "Unusually cold sensation in hands and feet"
+                },
+                {
+                    "symptomId": 42,
+                    "name": "Difficulty Concentrating",
+                    "category": "Psychological",
+                    "description": "Trouble focusing or maintaining attention"
+                },
+                {
+                    "symptomId": 43,
+                    "name": "Memory Loss",
+                    "category": "Neurological",
+                    "description": "Difficulty remembering recent or past events"
+                },
+                {
+                    "symptomId": 44,
+                    "name": "Excessive Sweating",
+                    "category": "General",
+                    "description": "Abnormally high production of sweat"
+                },
+                {
+                    "symptomId": 45,
+                    "name": "Night Sweats",
+                    "category": "Systemic",
+                    "description": "Excessive sweating during sleep"
+                },
+                {
+                    "symptomId": 46,
+                    "name": "Dry Skin",
+                    "category": "Dermatological",
+                    "description": "Skin that appears rough, flaky, or scaly"
+                },
+                {
+                    "symptomId": 47,
+                    "name": "Red Eyes",
+                    "category": "Ophthalmological",
+                    "description": "Red or bloodshot appearance of the eyes"
+                },
+                {
+                    "symptomId": 48,
+                    "name": "Ear Pain",
+                    "category": "Otolaryngological",
+                    "description": "Discomfort or pain in the ear"
+                },
+                {
+                    "symptomId": 49,
+                    "name": "Nasal Congestion",
+                    "category": "Respiratory",
+                    "description": "Blocked or stuffy nose"
+                },
+                {
+                    "symptomId": 50,
+                    "name": "Sneezing",
+                    "category": "Respiratory",
+                    "description": "Forceful expulsion of air through the nose and mouth"
+                },
+                {
+                    "symptomId": 51,
+                    "name": "Muscle Cramps",
+                    "category": "Musculoskeletal",
+                    "description": "Involuntary contraction of muscles causing pain"
+                },
+                {
+                    "symptomId": 52,
+                    "name": "Chest Tightness",
+                    "category": "Cardiovascular",
+                    "description": "Sensation of pressure or tightness in the chest"
+                },
+                {
+                    "symptomId": 53,
+                    "name": "Frequent Headaches",
+                    "category": "Neurological",
+                    "description": "Recurring episodes of head pain"
+                },
+                {
+                    "symptomId": 54,
+                    "name": "Increased Heart Rate",
+                    "category": "Cardiovascular",
+                    "description": "Rapid or irregular heartbeats"
+                },
+                {
+                    "symptomId": 55,
+                    "name": "Tingling Sensation",
+                    "category": "Neurological",
+                    "description": "Prickling or pins-and-needles feeling on the skin"
+                },
+                {
+                    "symptomId": 56,
+                    "name": "Light Sensitivity",
+                    "category": "Ophthalmological",
+                    "description": "Discomfort or pain in the eyes when exposed to light"
+                },
+                {
+                    "symptomId": 57,
+                    "name": "Loss of Balance",
+                    "category": "Neurological",
+                    "description": "Difficulty maintaining physical stability"
+                },
+                {
+                    "symptomId": 58,
+                    "name": "Blood in Stool",
+                    "category": "Digestive",
+                    "description": "Presence of blood in bowel movements"
+                },
+                {
+                    "symptomId": 59,
+                    "name": "Frequent Nosebleeds",
+                    "category": "Otolaryngological",
+                    "description": "Recurring episodes of bleeding from the nose"
+                },
+                {
+                    "symptomId": 60,
+                    "name": "Unexplained Bruising",
+                    "category": "General",
+                    "description": "Bruises appearing without any known injury"
+                }                    
+    ]
+}

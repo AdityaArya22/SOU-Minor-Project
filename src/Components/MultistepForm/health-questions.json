@@ -1,0 +1,324 @@
+{
+    "healthQuestions": [
+        {
+            "questionId": 1,
+            "symptomId": 1,
+            "question": "Is the headache persistent and not relieved by over-the-counter pain medication?",
+            "responseOptions": [
+                {"type": "yes", "implication": "Potential serious condition"},
+                {"type": "no", "implication": "Likely minor issue"}
+            ],
+            "possibleDiseases": ["Migraine", "Brain Tumor", "Meningitis"]
+        },
+        {
+            "questionId": 2,
+            "symptomId": 1,
+            "question": "Do you experience vision changes or dizziness with the headache?",
+            "responseOptions": [
+                {"type": "yes", "implication": "Requires immediate medical attention"},
+                {"type": "no", "implication": "Monitor symptoms"}
+            ],
+            "possibleDiseases": ["Stroke", "Glaucoma", "Hypertension"]
+        },
+        {
+            "questionId": 3,
+            "symptomId": 2,
+            "question": "Does the chest pain radiate to your left arm or jaw?",
+            "responseOptions": [
+                {"type": "yes", "implication": "High risk of cardiac event"},
+                {"type": "no", "implication": "Less urgent, but still requires evaluation"}
+            ],
+            "possibleDiseases": ["Heart Attack", "Angina", "Coronary Artery Disease"]
+        },
+        {
+            "questionId": 4,
+            "symptomId": 3,
+            "question": "How high is your fever and how long has it been present?",
+            "responseOptions": [
+                {"type": "over 103°F/39.4°C", "implication": "Requires immediate medical attention"},
+                {"type": "between 100-103°F/37.8-39.4°C", "implication": "Monitor closely"},
+                {"type": "under 100°F/37.8°C", "implication": "Likely minor infection"}
+            ],
+            "possibleDiseases": ["Influenza", "Pneumonia", "Sepsis"]
+        },
+        {
+            "questionId": 5,
+            "symptomId": 4,
+            "question": "Is the fatigue persistent and interfering with daily activities?",
+            "responseOptions": [
+                {"type": "yes", "implication": "Potential chronic condition"},
+                {"type": "no", "implication": "Likely temporary exhaustion"}
+            ],
+            "possibleDiseases": ["Chronic Fatigue Syndrome", "Depression", "Anemia"]
+        },
+        {
+            "questionId": 6,
+            "symptomId": 5,
+            "question": "Is the cough dry or producing phlegm, and for how long?",
+            "responseOptions": [
+                {"type": "Persistent dry cough over 3 weeks", "implication": "Requires medical evaluation"},
+                {"type": "Productive cough with colored phlegm", "implication": "Possible infection"},
+                {"type": "Short-term cough with clear mucus", "implication": "Likely minor respiratory issue"}
+            ],
+            "possibleDiseases": ["Bronchitis", "Pneumonia", "Lung Cancer"]
+        },
+        {
+            "questionId": 7,
+            "symptomId": 6,
+            "question": "Do you experience dizziness when standing up or changing positions?",
+            "responseOptions": [
+                {"type": "yes", "implication": "Potential orthostatic hypotension"},
+                {"type": "no", "implication": "Might be related to other factors"}
+            ],
+            "possibleDiseases": ["Vertigo", "Inner Ear Disorder", "Blood Pressure Issues"]
+        },
+        {
+            "questionId": 8,
+            "symptomId": 7,
+            "question": "Is nausea accompanied by any other digestive symptoms?",
+            "responseOptions": [
+                {"type": "Vomiting and abdominal pain", "implication": "Possible gastrointestinal infection"},
+                {"type": "Nausea only", "implication": "Might be less severe"},
+                {"type": "Nausea with fever", "implication": "Potential viral infection"}
+            ],
+            "possibleDiseases": ["Gastroenteritis", "Food Poisoning", "Appendicitis"]
+        },
+        {
+            "questionId": 9,
+            "symptomId": 9,
+            "question": "Does shortness of breath occur during rest or only with physical activity?",
+            "responseOptions": [
+                {"type": "During rest", "implication": "Serious respiratory concern"},
+                {"type": "Only during physical activity", "implication": "Moderate concern"},
+                {"type": "Minimal and occasional", "implication": "Less urgent"}
+            ],
+            "possibleDiseases": ["Asthma", "COPD", "Heart Failure"]
+        },
+        {
+            "questionId": 10,
+            "symptomId": 10,
+            "question": "Is abdominal pain localized or spread across the entire abdomen?",
+            "responseOptions": [
+                {"type": "Sharp, localized pain", "implication": "Potential organ-specific issue"},
+                {"type": "Widespread, dull pain", "implication": "Possible systemic condition"},
+                {"type": "Mild, intermittent pain", "implication": "Less urgent"}
+            ],
+            "possibleDiseases": ["Appendicitis", "Gastritis", "Kidney Stones"]
+        },
+        {
+            "questionId": 11,
+            "symptomId": 11,
+            "question": "Does back pain worsen with movement or remain constant?",
+            "responseOptions": [
+                {"type": "Severe pain that limits movement", "implication": "Requires medical evaluation"},
+                {"type": "Pain increases with specific movements", "implication": "Possible muscular issue"},
+                {"type": "Mild, occasional pain", "implication": "Likely minor strain"}
+            ],
+            "possibleDiseases": ["Herniated Disc", "Sciatica", "Spinal Stenosis"]
+        },
+        {
+            "questionId": 12,
+            "symptomId": 13,
+            "question": "Is the sore throat accompanied by fever or difficulty swallowing?",
+            "responseOptions": [
+                {"type": "Severe pain and difficulty swallowing", "implication": "Possible serious throat infection"},
+                {"type": "Mild pain without other symptoms", "implication": "Likely minor irritation"},
+                {"type": "Pain with fever", "implication": "Potential strep throat"}
+            ],
+            "possibleDiseases": ["Strep Throat", "Tonsillitis", "Viral Pharyngitis"]
+        },
+        {
+            "questionId": 13,
+            "symptomId": 15,
+            "question": "Is the itchy skin localized or spread across the body?",
+            "responseOptions": [
+                {"type": "Widespread, persistent itching", "implication": "Possible systemic skin condition"},
+                {"type": "Localized itching", "implication": "Might be contact dermatitis"},
+                {"type": "Intermittent, mild itching", "implication": "Less urgent"}
+            ],
+            "possibleDiseases": ["Eczema", "Allergic Reaction", "Psoriasis"]
+        },
+        {
+            "questionId": 14,
+            "symptomId": 17,
+            "question": "Are vision changes sudden or gradual?",
+            "responseOptions": [
+                {"type": "Sudden, significant changes", "implication": "Requires immediate medical attention"},
+                {"type": "Gradual blurriness", "implication": "Potential vision deterioration"},
+                {"type": "Mild, intermittent blurring", "implication": "Less urgent"}
+            ],
+            "possibleDiseases": ["Glaucoma", "Retinal Detachment", "Diabetic Retinopathy"]
+        },
+        {
+            "questionId": 15,
+            "symptomId": 19,
+            "question": "Is numbness localized to one area or spreading?",
+            "responseOptions": [
+                {"type": "Spreading numbness", "implication": "Potential neurological concern"},
+                {"type": "Localized to one limb", "implication": "Possible nerve compression"},
+                {"type": "Brief, occasional numbness", "implication": "Less urgent"}
+            ],
+            "possibleDiseases": ["Multiple Sclerosis", "Stroke", "Peripheral Neuropathy"]
+        },
+                {
+                    "questionId": 16,
+                    "symptomId": 21,
+                    "question": "Are these feelings of anxiety interfering with your daily life and routine?",
+                    "responseOptions": [
+                        {"type": "yes", "implication": "Potential anxiety disorder requiring professional help"},
+                        {"type": "no", "implication": "Mild anxiety that may be manageable"}
+                    ],
+                    "possibleDiseases": ["Generalized Anxiety Disorder", "Panic Disorder", "Social Anxiety"]
+                },
+                {
+                    "questionId": 17,
+                    "symptomId": 22,
+                    "question": "Have you experienced persistent feelings of sadness lasting more than two weeks?",
+                    "responseOptions": [
+                        {"type": "yes", "implication": "High risk of clinical depression"},
+                        {"type": "no", "implication": "Temporary mood fluctuation"}
+                    ],
+                    "possibleDiseases": ["Major Depressive Disorder", "Bipolar Depression", "Persistent Depressive Disorder"]
+                },
+                {
+                    "questionId": 18,
+                    "symptomId": 23,
+                    "question": "Is the swelling sudden and accompanied by pain or redness?",
+                    "responseOptions": [
+                        {"type": "yes", "implication": "Potential serious inflammatory condition"},
+                        {"type": "no", "implication": "Might be less urgent"}
+                    ],
+                    "possibleDiseases": ["Lymphedema", "Rheumatoid Arthritis", "Deep Vein Thrombosis"]
+                },
+                {
+                    "questionId": 19,
+                    "symptomId": 24,
+                    "question": "Is hair loss occurring in patches or as overall thinning?",
+                    "responseOptions": [
+                        {"type": "yes", "implication": "Potential underlying health condition"},
+                        {"type": "no", "implication": "Normal hair shedding"}
+                    ],
+                    "possibleDiseases": ["Alopecia", "Thyroid Disorders", "Nutritional Deficiencies"]
+                },
+                {
+                    "questionId": 20,
+                    "symptomId": 25,
+                    "question": "Has loss of appetite been accompanied by significant weight loss?",
+                    "responseOptions": [
+                        {"type": "yes", "implication": "Requires immediate medical evaluation"},
+                        {"type": "no", "implication": "Temporary dietary change"}
+                    ],
+                    "possibleDiseases": ["Cancer", "Digestive Disorders", "Depression"]
+                },
+                {
+                    "questionId": 21,
+                    "symptomId": 26,
+                    "question": "Do cold sweats occur during physical activity or at rest?",
+                    "responseOptions": [
+                        {"type": "yes", "implication": "Potential cardiovascular or serious medical concern"},
+                        {"type": "no", "implication": "Less urgent"}
+                    ],
+                    "possibleDiseases": ["Heart Attack", "Shock", "Severe Infection"]
+                },
+                {
+                    "questionId": 22,
+                    "symptomId": 27,
+                    "question": "Has insomnia been persistent for more than two weeks?",
+                    "responseOptions": [
+                        {"type": "yes", "implication": "Potential chronic sleep disorder"},
+                        {"type": "no", "implication": "Temporary sleep disruption"}
+                    ],
+                    "possibleDiseases": ["Chronic Insomnia", "Sleep Apnea", "Depression"]
+                },
+                {
+                    "questionId": 23,
+                    "symptomId": 28,
+                    "question": "Is weight loss occurring without changes in diet or exercise?",
+                    "responseOptions": [
+                        {"type": "yes", "implication": "Requires medical investigation"},
+                        {"type": "no", "implication": "Potentially intentional weight loss"}
+                    ],
+                    "possibleDiseases": ["Thyroid Disorders", "Cancer", "Diabetes"]
+                },
+                {
+                    "questionId": 24,
+                    "symptomId": 29,
+                    "question": "Is weight gain occurring rapidly without significant diet or lifestyle changes?",
+                    "responseOptions": [
+                        {"type": "yes", "implication": "Potential hormonal or metabolic issue"},
+                        {"type": "no", "implication": "Likely normal fluctuation"}
+                    ],
+                    "possibleDiseases": ["Hypothyroidism", "Cushing's Syndrome", "Hormone Imbalance"]
+                },
+                {
+                    "questionId": 25,
+                    "symptomId": 30,
+                    "question": "Do tremors interfere with your daily activities or writing?",
+                    "responseOptions": [
+                        {"type": "yes", "implication": "Potential neurological condition"},
+                        {"type": "no", "implication": "Less severe tremor"}
+                    ],
+                    "possibleDiseases": ["Parkinson's Disease", "Essential Tremor", "Multiple Sclerosis"]
+                },
+                {
+                    "questionId": 26,
+                    "symptomId": 31,
+                    "question": "Do heart palpitations occur during rest or only during physical activity?",
+                    "responseOptions": [
+                        {"type": "yes", "implication": "Requires cardiac evaluation"},
+                        {"type": "no", "implication": "Less urgent concern"}
+                    ],
+                    "possibleDiseases": ["Arrhythmia", "Heart Disease", "Anxiety Disorder"]
+                },
+                {
+                    "questionId": 27,
+                    "symptomId": 32,
+                    "question": "Is dry mouth persistent and affecting your ability to eat or speak?",
+                    "responseOptions": [
+                        {"type": "yes", "implication": "Potential underlying medical condition"},
+                        {"type": "no", "implication": "Mild or temporary issue"}
+                    ],
+                    "possibleDiseases": ["Sjögren's Syndrome", "Diabetes", "Medication Side Effect"]
+                },
+                {
+                    "questionId": 28,
+                    "symptomId": 33,
+                    "question": "Does difficulty swallowing occur with both solid and liquid foods?",
+                    "responseOptions": [
+                        {"type": "yes", "implication": "Serious swallowing disorder"},
+                        {"type": "no", "implication": "Potentially less severe"}
+                    ],
+                    "possibleDiseases": ["Dysphagia", "Esophageal Stricture", "Neurological Disorders"]
+                },
+                {
+                    "questionId": 29,
+                    "symptomId": 34,
+                    "question": "Has yellowing of skin been accompanied by abdominal pain?",
+                    "responseOptions": [
+                        {"type": "yes", "implication": "Urgent medical condition"},
+                        {"type": "no", "implication": "Requires medical assessment"}
+                    ],
+                    "possibleDiseases": ["Hepatitis", "Liver Cirrhosis", "Pancreatic Cancer"]
+                },
+                {
+                    "questionId": 30,
+                    "symptomId": 35,
+                    "question": "Is excessive thirst accompanied by frequent urination?",
+                    "responseOptions": [
+                        {"type": "yes", "implication": "Potential diabetes risk"},
+                        {"type": "no", "implication": "Less urgent hydration issue"}
+                    ],
+                    "possibleDiseases": ["Diabetes", "Diabetes Insipidus", "Kidney Disorders"]
+                },
+                {
+                    "questionId": 31,
+                    "symptomId": 36,
+                    "question": "Does frequent urination disrupt your sleep or daily activities?",
+                    "responseOptions": [
+                        {"type": "yes", "implication": "Requires medical evaluation"},
+                        {"type": "no", "implication": "Potentially minor issue"}
+                    ],
+                    "possibleDiseases": ["Overactive Bladder", "Prostate Issues", "Urinary Tract Infection"]
+                }
+            ]
+}
