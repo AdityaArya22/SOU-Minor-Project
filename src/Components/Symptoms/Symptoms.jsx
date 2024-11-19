@@ -3,73 +3,8 @@ import Step1 from '../MultistepForm/Step1';
 import Step2 from '../MultistepForm/Step2';
 import Step3 from '../MultistepForm/Step3';
 import Step4 from '../MultistepForm/Step4';
+import Step5 from '../MultistepForm/Step5'; // Import Step5 directly
 import { ChevronLeft } from 'lucide-react';
-
-const HealthQuestionnaire = () => {
-    const [answers, setAnswers] = useState({});
-    
-    const questions = [
-        "Have you had this condition before?",
-        "Have you recently been in contact with anyone who is sick?",
-        "Are you feeling fatigued or unusually tired?",
-        "Have you traveled in the past 14 days?",
-        "Are you currently on any medication?"
-    ];
-    
-    const handleAnswer = (question, answer) => {
-        setAnswers(prev => ({ ...prev, [question]: answer }));
-    };
-    
-    return (
-        <div className="w-full max-w-2xl mx-auto">
-            <h1 className="text-2xl font-bold mb-4">Health Questionnaire</h1>
-            <table className="w-full">
-                <thead>
-                    <tr>
-                        <th className="text-left py-2 px-4 w-3/4">Question</th>
-                        <th className="text-center py-2 px-2">Yes</th>
-                        <th className="text-center py-2 px-2">No</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {questions.map((question, index) => (
-                        <tr key={index} className={index % 2 === 0 ? 'bg-gray-100' : 'bg-white'}>
-                            <td className="py-4 px-4">{question}</td>
-                            <td className="text-center">
-                                <button
-                                    onClick={() => handleAnswer(question, 'Yes')}
-                                    className={`w-6 h-6 rounded-full border-2 ${
-                                        answers[question] === 'Yes'
-                                            ? 'border-blue-500 bg-blue-500'
-                                            : 'border-gray-300'
-                                    }`}
-                                >
-                                    {answers[question] === 'Yes' && (
-                                        <span className="block w-4 h-4 mx-auto rounded-full bg-white" />
-                                    )}
-                                </button>
-                            </td>
-                            <td className="text-center">
-                                <button
-                                    onClick={() => handleAnswer(question, 'No')}
-                                    className={`w-6 h-6 rounded-full border-2 ${
-                                        answers[question] === 'No'
-                                            ? 'border-blue-500 bg-blue-500'
-                                            : 'border-gray-300'
-                                    }`}
-                                >
-                                    {answers[question] === 'No' && (
-                                        <span className="block w-4 h-4 mx-auto rounded-full bg-white" />
-                                    )}
-                                </button>
-                            </td>
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
-        </div>
-    );
-};
 
 const Symptoms = () => {
     const [currentStep, setCurrentStep] = useState(1);
@@ -81,7 +16,7 @@ const Symptoms = () => {
     const getProgressWidth = () => {
         const stepPercentages = [11, 31, 51, 71, 91];
         return `${stepPercentages[currentStep - 1]}%`;
-    }
+    };
 
     const handleNext = () => {
         switch (currentStep) {
@@ -139,7 +74,7 @@ const Symptoms = () => {
                         {currentStep === 2 && <Step2 age={age} setAge={setAge} />}
                         {currentStep === 3 && <Step3 selected={sex} setSelected={setSex} />}
                         {currentStep === 4 && <Step4 onSymptomSelect={handleSymptomSelect} selectedSymptoms={selectedSymptoms} />}
-                        {currentStep === 5 && <HealthQuestionnaire />}
+                        {currentStep === 5 && <Step5 />} {/* Use Step5 here */}
                     </div>
                     <div className="flex justify-between mt-8">
                         <div>
@@ -155,7 +90,7 @@ const Symptoms = () => {
                         </div>
                         <div>
                             {currentStep === 5
-                                ? <button className='bg-green-600 hover:bg-green-800 px-4 py-1 text-white rounded-lg text-2xl'>Submit</button>
+                                ? <button className='bg-green-600 hover:bg-green-800 px-4 py-1 text-white rounded-md text-xl font-semibold'>Submit</button>
                                 : <button onClick={handleNext} className='bg-green-600 hover:bg-green-800 px-4 py-1 text-white rounded-md text-xl font-semibold'>Next</button>
                             }
                         </div>
@@ -164,6 +99,6 @@ const Symptoms = () => {
             </div>
         </div>
     );
-}
+};
 
 export default Symptoms;
