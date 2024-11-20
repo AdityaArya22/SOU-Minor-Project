@@ -1,0 +1,1124 @@
+{
+    "diseases": [
+        {
+            "diseaseId": 1,
+            "name": "Common Cold",
+            "category": "Respiratory",
+            "riskLevel": "Low",
+            "description": "A viral infection of the upper respiratory tract",
+            "commonSymptoms": [
+                "Cough",
+                "Sore Throat",
+                "Runny Nose",
+                "Nasal Congestion",
+                "Sneezing"
+            ],
+            "possibleSymptoms": [
+                "Fever",
+                "Fatigue",
+                "Nausea",
+                "Red Eyes"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": false
+        },
+        {
+            "diseaseId": 2,
+            "name": "Influenza",
+            "category": "Respiratory",
+            "riskLevel": "Moderate",
+            "description": "A viral infection that attacks respiratory system",
+            "commonSymptoms": [
+                "Fever",
+                "Fatigue",
+                "Cough",
+                "Sore Throat",
+                "Cold Sweats"
+            ],
+            "possibleSymptoms": [
+                "Headache",
+                "Nausea",
+                "Vomiting",
+                "Shortness of Breath",
+                "Excessive Sweating",
+                "Night Sweats"
+            ],
+            "emergencySymptoms": [
+                "Shortness of Breath"
+            ],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 3,
+            "name": "Migraine",
+            "category": "Neurological",
+            "riskLevel": "Moderate",
+            "description": "Severe recurring headaches with additional symptoms",
+            "commonSymptoms": [
+                "Headache",
+                "Frequent Headaches",
+                "Light Sensitivity"
+            ],
+            "possibleSymptoms": [
+                "Dizziness",
+                "Nausea",
+                "Vomiting",
+                "Blurred Vision"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 4,
+            "name": "Coronary Artery Disease",
+            "category": "Cardiovascular",
+            "riskLevel": "High",
+            "description": "Buildup of plaque in heart arteries",
+            "commonSymptoms": [
+                "Chest Pain",
+                "Chest Tightness",
+                "Increased Heart Rate"
+            ],
+            "possibleSymptoms": [
+                "Fatigue",
+                "Shortness of Breath",
+                "Cold Sweats",
+                "Heart Palpitations"
+            ],
+            "emergencySymptoms": [
+                "Chest Pain",
+                "Shortness of Breath"
+            ],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 5,
+            "name": "Type 2 Diabetes",
+            "category": "Endocrine",
+            "riskLevel": "High",
+            "description": "Metabolic disorder affecting blood sugar levels",
+            "commonSymptoms": [
+                "Excessive Thirst",
+                "Frequent Urination",
+                "Dry Mouth"
+            ],
+            "possibleSymptoms": [
+                "Fatigue",
+                "Weight Loss",
+                "Excessive Sweating",
+                "Dry Skin"
+            ],
+            "emergencySymptoms": [
+                "Yellowing of Skin"
+            ],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 6,
+            "name": "Anxiety Disorder",
+            "category": "Psychological",
+            "riskLevel": "Moderate",
+            "description": "Persistent and excessive worry and fear",
+            "commonSymptoms": [
+                "Anxiety",
+                "Insomnia",
+                "Heart Palpitations"
+            ],
+            "possibleSymptoms": [
+                "Headache",
+                "Dizziness",
+                "Difficulty Concentrating",
+                "Increased Heart Rate"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 7,
+            "name": "Rheumatoid Arthritis",
+            "category": "Autoimmune",
+            "riskLevel": "Moderate",
+            "description": "Chronic inflammatory disorder affecting joints",
+            "commonSymptoms": [
+                "Swollen Joints",
+                "Joint Stiffness",
+                "Muscle Weakness"
+            ],
+            "possibleSymptoms": [
+                "Fever",
+                "Fatigue",
+                "Swollen Lymph Nodes",
+                "Muscle Cramps"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 8,
+            "name": "Gastroenteritis",
+            "category": "Digestive",
+            "riskLevel": "Moderate",
+            "description": "Inflammation of the digestive system",
+            "commonSymptoms": [
+                "Nausea",
+                "Vomiting",
+                "Abdominal Pain",
+                "Loss of Appetite"
+            ],
+            "possibleSymptoms": [
+                "Fever",
+                "Fatigue",
+                "Difficulty Swallowing"
+            ],
+            "emergencySymptoms": [
+                "Blood in Stool"
+            ],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 9,
+            "name": "Multiple Sclerosis",
+            "category": "Neurological",
+            "riskLevel": "High",
+            "description": "Autoimmune disease affecting the nervous system",
+            "commonSymptoms": [
+                "Numbness",
+                "Muscle Weakness",
+                "Loss of Balance"
+            ],
+            "possibleSymptoms": [
+                "Blurred Vision",
+                "Burning Sensation",
+                "Difficulty Concentrating",
+                "Memory Loss"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 10,
+            "name": "Liver Disease",
+            "category": "Digestive",
+            "riskLevel": "High",
+            "description": "Various conditions affecting liver function",
+            "commonSymptoms": [
+                "Yellowing of Skin",
+                "Loss of Appetite",
+                "Abdominal Pain"
+            ],
+            "possibleSymptoms": [
+                "Fatigue",
+                "Nausea",
+                "Swelling",
+                "Weight Loss"
+            ],
+            "emergencySymptoms": [
+                "Yellowing of Skin",
+                "Blood in Stool"
+            ],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 16,
+            "name": "Skin Allergy",
+            "category": "Dermatological",
+            "riskLevel": "Low",
+            "description": "Allergic reaction affecting the skin",
+            "commonSymptoms": [
+                "Itchy Skin",
+                "Skin Rash",
+                "Dry Skin"
+            ],
+            "possibleSymptoms": [
+                "Fever",
+                "Excessive Sweating"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": false
+        },
+        {
+            "diseaseId": 17,
+            "name": "Asthma",
+            "category": "Respiratory",
+            "riskLevel": "Moderate",
+            "description": "Chronic condition affecting airways",
+            "commonSymptoms": [
+                "Cough",
+                "Shortness of Breath",
+                "Chest Tightness"
+            ],
+            "possibleSymptoms": [
+                "Fatigue",
+                "Excessive Sweating"
+            ],
+            "emergencySymptoms": [
+                "Shortness of Breath"
+            ],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 18,
+            "name": "Vertigo",
+            "category": "Neurological",
+            "riskLevel": "Moderate",
+            "description": "Sensation of dizziness and spinning",
+            "commonSymptoms": [
+                "Dizziness",
+                "Loss of Balance"
+            ],
+            "possibleSymptoms": [
+                "Headache",
+                "Nausea",
+                "Blurred Vision"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 19,
+            "name": "Otitis Media",
+            "category": "Otolaryngological",
+            "riskLevel": "Moderate",
+            "description": "Middle ear infection",
+            "commonSymptoms": [
+                "Ear Pain",
+                "Hearing Loss"
+            ],
+            "possibleSymptoms": [
+                "Fever",
+                "Dizziness"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 20,
+            "name": "Fibromyalgia",
+            "category": "Musculoskeletal",
+            "riskLevel": "Moderate",
+            "description": "Chronic condition causing widespread pain",
+            "commonSymptoms": [
+                "Back Pain",
+                "Muscle Weakness",
+                "Muscle Cramps"
+            ],
+            "possibleSymptoms": [
+                "Fatigue",
+                "Insomnia",
+                "Difficulty Concentrating"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 21,
+            "name": "Glaucoma",
+            "category": "Ophthalmological",
+            "riskLevel": "High",
+            "description": "Eye condition that damages the optic nerve",
+            "commonSymptoms": [
+                "Blurred Vision",
+                "Red Eyes",
+                "Light Sensitivity"
+            ],
+            "possibleSymptoms": [
+                "Headache"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 22,
+            "name": "Hypothyroidism",
+            "category": "Endocrine",
+            "riskLevel": "Moderate",
+            "description": "Underactive thyroid gland",
+            "commonSymptoms": [
+                "Fatigue",
+                "Weight Gain",
+                "Dry Skin"
+            ],
+            "possibleSymptoms": [
+                "Hair Loss",
+                "Insomnia",
+                "Cold Hands and Feet"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 23,
+            "name": "Lupus",
+            "category": "Autoimmune",
+            "riskLevel": "High",
+            "description": "Systemic autoimmune disease",
+            "commonSymptoms": [
+                "Skin Rash",
+                "Swollen Joints",
+                "Swollen Lymph Nodes"
+            ],
+            "possibleSymptoms": [
+                "Fever",
+                "Fatigue",
+                "Back Pain",
+                "Light Sensitivity"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 24,
+            "name": "Chronic Sinusitis",
+            "category": "Respiratory",
+            "riskLevel": "Low",
+            "description": "Inflammation of the sinuses",
+            "commonSymptoms": [
+                "Headache",
+                "Runny Nose",
+                "Nasal Congestion"
+            ],
+            "possibleSymptoms": [
+                "Sore Throat",
+                "Ear Pain"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 25,
+            "name": "Gastroesophageal Reflux Disease",
+            "category": "Digestive",
+            "riskLevel": "Moderate",
+            "description": "Chronic digestive disease",
+            "commonSymptoms": [
+                "Abdominal Pain",
+                "Difficulty Swallowing",
+                "Persistent Hiccups"
+            ],
+            "possibleSymptoms": [
+                "Nausea",
+                "Dry Mouth"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 26,
+            "name": "Carpal Tunnel Syndrome",
+            "category": "Musculoskeletal",
+            "riskLevel": "Low",
+            "description": "Nerve compression in the wrist",
+            "commonSymptoms": [
+                "Numbness",
+                "Burning Sensation",
+                "Tingling Sensation"
+            ],
+            "possibleSymptoms": [
+                "Muscle Weakness",
+                "Muscle Cramps"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 27,
+            "name": "Sleep Apnea",
+            "category": "Respiratory",
+            "riskLevel": "Moderate",
+            "description": "Sleep disorder with breathing interruptions",
+            "commonSymptoms": [
+                "Insomnia",
+                "Difficulty Concentrating",
+                "Night Sweats"
+            ],
+            "possibleSymptoms": [
+                "Fatigue",
+                "Weight Gain",
+                "Excessive Sweating"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 28,
+            "name": "Thrombosis",
+            "category": "Cardiovascular",
+            "riskLevel": "High",
+            "description": "Blood clot formation in blood vessels",
+            "commonSymptoms": [
+                "Swelling",
+                "Cold Hands and Feet",
+                "Muscle Cramps"
+            ],
+            "possibleSymptoms": [
+                "Chest Pain",
+                "Burning Sensation"
+            ],
+            "emergencySymptoms": [
+                "Chest Pain",
+                "Shortness of Breath"
+            ],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 29,
+            "name": "Meningitis",
+            "category": "Neurological",
+            "riskLevel": "High",
+            "description": "Inflammation of brain and spinal cord membranes",
+            "commonSymptoms": [
+                "Headache",
+                "Fever",
+                "Frequent Headaches"
+            ],
+            "possibleSymptoms": [
+                "Dizziness",
+                "Light Sensitivity",
+                "Loss of Balance"
+            ],
+            "emergencySymptoms": [
+                "Memory Loss"
+            ],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 30,
+            "name": "Chronic Kidney Disease",
+            "category": "Renal",
+            "riskLevel": "High",
+            "description": "Progressive loss of kidney function",
+            "commonSymptoms": [
+                "Swelling",
+                "Frequent Urination",
+                "Excessive Thirst"
+            ],
+            "possibleSymptoms": [
+                "Fatigue",
+                "Weight Loss",
+                "Excessive Sweating"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 31,
+            "name": "Peripheral Neuropathy",
+            "category": "Neurological",
+            "riskLevel": "Moderate",
+            "description": "Damage to peripheral nerves causing sensory and motor dysfunction",
+            "commonSymptoms": [
+                "Numbness",
+                "Burning Sensation",
+                "Tingling Sensation"
+            ],
+            "possibleSymptoms": [
+                "Muscle Weakness",
+                "Difficulty Concentrating",
+                "Memory Loss"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 32,
+            "name": "Chronic Pancreatitis",
+            "category": "Digestive",
+            "riskLevel": "High",
+            "description": "Long-term inflammation of the pancreas",
+            "commonSymptoms": [
+                "Abdominal Pain",
+                "Loss of Appetite",
+                "Difficulty Swallowing"
+            ],
+            "possibleSymptoms": [
+                "Fatigue",
+                "Nausea",
+                "Vomiting"
+            ],
+            "emergencySymptoms": [
+                "Yellowing of Skin"
+            ],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 33,
+            "name": "Pulmonary Embolism",
+            "category": "Cardiovascular",
+            "riskLevel": "High",
+            "description": "Blood clot blocking pulmonary artery in the lung",
+            "commonSymptoms": [
+                "Shortness of Breath",
+                "Chest Pain",
+                "Cold Sweats"
+            ],
+            "possibleSymptoms": [
+                "Fatigue",
+                "Heart Palpitations",
+                "Chest Tightness"
+            ],
+            "emergencySymptoms": [
+                "Chest Pain"
+            ],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 34,
+            "name": "Addison's Disease",
+            "category": "Endocrine",
+            "riskLevel": "High",
+            "description": "Insufficient production of adrenal hormones",
+            "commonSymptoms": [
+                "Fatigue",
+                "Swelling",
+                "Weight Loss"
+            ],
+            "possibleSymptoms": [
+                "Cold Hands and Feet",
+                "Increased Heart Rate",
+                "Dry Mouth"
+            ],
+            "emergencySymptoms": [
+                "Yellowing of Skin"
+            ],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 35,
+            "name": "Alzheimer's Disease",
+            "category": "Neurological",
+            "riskLevel": "High",
+            "description": "Progressive neurological disorder affecting memory",
+            "commonSymptoms": [
+                "Memory Loss",
+                "Difficulty Concentrating",
+                "Depression"
+            ],
+            "possibleSymptoms": [
+                "Headache",
+                "Dizziness",
+                "Insomnia"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 36,
+            "name": "Psoriatic Arthritis",
+            "category": "Autoimmune",
+            "riskLevel": "Moderate",
+            "description": "Joint inflammation associated with psoriasis",
+            "commonSymptoms": [
+                "Swollen Joints",
+                "Skin Rash",
+                "Muscle Weakness"
+            ],
+            "possibleSymptoms": [
+                "Swollen Lymph Nodes",
+                "Fatigue",
+                "Muscle Cramps"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 37,
+            "name": "Polycystic Ovary Syndrome",
+            "category": "Endocrine",
+            "riskLevel": "Moderate",
+            "description": "Hormonal disorder causing enlarged ovaries",
+            "commonSymptoms": [
+                "Weight Gain",
+                "Hair Loss",
+                "Dry Skin"
+            ],
+            "possibleSymptoms": [
+                "Insomnia",
+                "Excessive Thirst",
+                "Weight Loss"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 38,
+            "name": "Guillain-Barr\u00e9 Syndrome",
+            "category": "Neurological",
+            "riskLevel": "High",
+            "description": "Rare autoimmune disorder affecting nervous system",
+            "commonSymptoms": [
+                "Muscle Weakness",
+                "Numbness",
+                "Tingling Sensation"
+            ],
+            "possibleSymptoms": [
+                "Fatigue",
+                "Dizziness",
+                "Loss of Balance"
+            ],
+            "emergencySymptoms": [
+                "Shortness of Breath"
+            ],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 39,
+            "name": "Celiac Disease",
+            "category": "Digestive",
+            "riskLevel": "Moderate",
+            "description": "Immune reaction to gluten causing intestinal damage",
+            "commonSymptoms": [
+                "Loss of Appetite",
+                "Nausea",
+                "Vomiting"
+            ],
+            "possibleSymptoms": [
+                "Weight Loss",
+                "Fatigue",
+                "Dry Skin"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 40,
+            "name": "Sarcoidosis",
+            "category": "Systemic",
+            "riskLevel": "Moderate",
+            "description": "Inflammatory disease affecting multiple organs",
+            "commonSymptoms": [
+                "Fatigue",
+                "Swollen Lymph Nodes",
+                "Swelling"
+            ],
+            "possibleSymptoms": [
+                "Headache",
+                "Cough",
+                "Swollen Joints"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 41,
+            "name": "Crohn's Disease",
+            "category": "Digestive",
+            "riskLevel": "High",
+            "description": "Chronic inflammatory bowel disease",
+            "commonSymptoms": [
+                "Abdominal Pain",
+                "Nausea",
+                "Loss of Appetite"
+            ],
+            "possibleSymptoms": [
+                "Fatigue",
+                "Swollen Lymph Nodes",
+                "Blood in Stool"
+            ],
+            "emergencySymptoms": [
+                "Blood in Stool"
+            ],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 42,
+            "name": "Myasthenia Gravis",
+            "category": "Neurological",
+            "riskLevel": "High",
+            "description": "Autoimmune neuromuscular disorder",
+            "commonSymptoms": [
+                "Muscle Weakness",
+                "Difficulty Concentrating",
+                "Shortness of Breath"
+            ],
+            "possibleSymptoms": [
+                "Fatigue",
+                "Dizziness",
+                "Loss of Balance"
+            ],
+            "emergencySymptoms": [
+                "Shortness of Breath"
+            ],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 43,
+            "name": "Endometriosis",
+            "category": "Reproductive",
+            "riskLevel": "Moderate",
+            "description": "Tissue similar to uterine lining grows outside uterus",
+            "commonSymptoms": [
+                "Back Pain",
+                "Abdominal Pain",
+                "Fatigue"
+            ],
+            "possibleSymptoms": [
+                "Nausea",
+                "Insomnia",
+                "Loss of Appetite"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 44,
+            "name": "Pernicious Anemia",
+            "category": "Hematologic",
+            "riskLevel": "Moderate",
+            "description": "Vitamin B12 deficiency causing red blood cell reduction",
+            "commonSymptoms": [
+                "Fatigue",
+                "Weight Loss",
+                "Hair Loss"
+            ],
+            "possibleSymptoms": [
+                "Cold Hands and Feet",
+                "Difficulty Concentrating",
+                "Night Sweats"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 45,
+            "name": "Sj\u00f6gren's Syndrome",
+            "category": "Autoimmune",
+            "riskLevel": "Moderate",
+            "description": "Immune system disorder affecting moisture-producing glands",
+            "commonSymptoms": [
+                "Dry Mouth",
+                "Light Sensitivity",
+                "Red Eyes"
+            ],
+            "possibleSymptoms": [
+                "Fatigue",
+                "Skin Rash",
+                "Blurred Vision"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 46,
+            "name": "Meniere's Disease",
+            "category": "Otolaryngological",
+            "riskLevel": "Moderate",
+            "description": "Inner ear disorder causing vertigo and hearing issues",
+            "commonSymptoms": [
+                "Dizziness",
+                "Hearing Loss",
+                "Loss of Balance"
+            ],
+            "possibleSymptoms": [
+                "Nausea",
+                "Headache",
+                "Increased Heart Rate"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 47,
+            "name": "Hemochromatosis",
+            "category": "Metabolic",
+            "riskLevel": "High",
+            "description": "Genetic disorder causing iron accumulation",
+            "commonSymptoms": [
+                "Fatigue",
+                "Swelling",
+                "Weight Gain"
+            ],
+            "possibleSymptoms": [
+                "Swollen Joints",
+                "Joint Stiffness",
+                "Unexplained Bruising"
+            ],
+            "emergencySymptoms": [
+                "Yellowing of Skin"
+            ],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 48,
+            "name": "Sickle Cell Anemia",
+            "category": "Hematologic",
+            "riskLevel": "High",
+            "description": "Inherited red blood cell disorder",
+            "commonSymptoms": [
+                "Muscle Cramps",
+                "Swelling",
+                "Fatigue"
+            ],
+            "possibleSymptoms": [
+                "Chest Pain",
+                "Shortness of Breath",
+                "Cold Hands and Feet"
+            ],
+            "emergencySymptoms": [
+                "Chest Pain"
+            ],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 49,
+            "name": "Ehlers-Danlos Syndrome",
+            "category": "Connective Tissue",
+            "riskLevel": "Moderate",
+            "description": "Group of inherited disorders affecting connective tissues",
+            "commonSymptoms": [
+                "Burning Sensation",
+                "Tingling Sensation",
+                "Muscle Weakness"
+            ],
+            "possibleSymptoms": [
+                "Swollen Joints",
+                "Muscle Cramps",
+                "Back Pain"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 50,
+            "name": "Interstitial Cystitis",
+            "category": "Urological",
+            "riskLevel": "Moderate",
+            "description": "Chronic bladder condition causing pain and pressure",
+            "commonSymptoms": [
+                "Abdominal Pain",
+                "Frequent Urination",
+                "Difficulty Swallowing"
+            ],
+            "possibleSymptoms": [
+                "Insomnia",
+                "Nausea",
+                "Fatigue"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 51,
+            "name": "Amyloidosis",
+            "category": "Systemic",
+            "riskLevel": "High",
+            "description": "Abnormal protein buildup in organs and tissues",
+            "commonSymptoms": [
+                "Swelling",
+                "Fatigue",
+                "Muscle Weakness"
+            ],
+            "possibleSymptoms": [
+                "Shortness of Breath",
+                "Abdominal Pain",
+                "Frequent Urination"
+            ],
+            "emergencySymptoms": [
+                "Chest Pain"
+            ],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 52,
+            "name": "Paget's Disease of Bone",
+            "category": "Musculoskeletal",
+            "riskLevel": "Moderate",
+            "description": "Chronic bone disorder affecting bone remodeling",
+            "commonSymptoms": [
+                "Back Pain",
+                "Joint Stiffness",
+                "Muscle Cramps"
+            ],
+            "possibleSymptoms": [
+                "Swelling",
+                "Tremors",
+                "Muscle Weakness"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 53,
+            "name": "Progressive Supranuclear Palsy",
+            "category": "Neurological",
+            "riskLevel": "High",
+            "description": "Rare brain disorder causing problems with balance, walking, eye movements",
+            "commonSymptoms": [
+                "Loss of Balance",
+                "Difficulty Concentrating",
+                "Dizziness"
+            ],
+            "possibleSymptoms": [
+                "Muscle Weakness",
+                "Memory Loss",
+                "Blurred Vision"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 54,
+            "name": "Cushing's Syndrome",
+            "category": "Endocrine",
+            "riskLevel": "High",
+            "description": "Hormonal disorder caused by high cortisol levels",
+            "commonSymptoms": [
+                "Weight Gain",
+                "Fatigue",
+                "Skin Rash"
+            ],
+            "possibleSymptoms": [
+                "Swollen Joints",
+                "Increased Heart Rate",
+                "Insomnia"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 55,
+            "name": "Fabry Disease",
+            "category": "Metabolic",
+            "riskLevel": "High",
+            "description": "Rare genetic disorder affecting multiple body systems",
+            "commonSymptoms": [
+                "Burning Sensation",
+                "Cold Hands and Feet",
+                "Muscle Weakness"
+            ],
+            "possibleSymptoms": [
+                "Abdominal Pain",
+                "Swelling",
+                "Tingling Sensation"
+            ],
+            "emergencySymptoms": [
+                "Chest Pain"
+            ],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 56,
+            "name": "Kawasaki Disease",
+            "category": "Cardiovascular",
+            "riskLevel": "High",
+            "description": "Inflammatory condition affecting blood vessels",
+            "commonSymptoms": [
+                "Skin Rash",
+                "Fever",
+                "Swollen Lymph Nodes"
+            ],
+            "possibleSymptoms": [
+                "Itchy Skin",
+                "Red Eyes",
+                "Light Sensitivity"
+            ],
+            "emergencySymptoms": [
+                "Chest Pain"
+            ],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 57,
+            "name": "Lambert-Eaton Syndrome",
+            "category": "Neurological",
+            "riskLevel": "High",
+            "description": "Autoimmune disorder affecting neuromuscular transmission",
+            "commonSymptoms": [
+                "Muscle Weakness",
+                "Difficulty Concentrating",
+                "Tingling Sensation"
+            ],
+            "possibleSymptoms": [
+                "Fatigue",
+                "Dizziness",
+                "Heart Palpitations"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 58,
+            "name": "Antiphospholipid Syndrome",
+            "category": "Autoimmune",
+            "riskLevel": "High",
+            "description": "Autoimmune disorder causing blood clots",
+            "commonSymptoms": [
+                "Chest Pain",
+                "Swelling",
+                "Unexplained Bruising"
+            ],
+            "possibleSymptoms": [
+                "Heart Palpitations",
+                "Increased Heart Rate",
+                "Cold Hands and Feet"
+            ],
+            "emergencySymptoms": [
+                "Chest Pain"
+            ],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 59,
+            "name": "Hyperparathyroidism",
+            "category": "Endocrine",
+            "riskLevel": "Moderate",
+            "description": "Overproduction of parathyroid hormone",
+            "commonSymptoms": [
+                "Back Pain",
+                "Weight Loss",
+                "Muscle Cramps"
+            ],
+            "possibleSymptoms": [
+                "Fatigue",
+                "Tremors",
+                "Increased Heart Rate"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        },
+        {
+            "diseaseId": 60,
+            "name": "Beh\u00e7et's Disease",
+            "category": "Systemic",
+            "riskLevel": "Moderate",
+            "description": "Rare disorder causing inflammation of blood vessels",
+            "commonSymptoms": [
+                "Skin Rash",
+                "Headache",
+                "Swollen Lymph Nodes"
+            ],
+            "possibleSymptoms": [
+                "Itchy Skin",
+                "Nausea",
+                "Swollen Joints"
+            ],
+            "emergencySymptoms": [],
+            "requiresMedicalAttention": true
+        }
+    ],
+    "riskLevels": {
+        "Low": "Typically self-limiting, may not require medical intervention",
+        "Moderate": "May require medical attention, usually not life-threatening",
+        "High": "Requires immediate medical attention, potentially life-threatening"
+    },
+    "metadata": {
+        "version": "1.1",
+        "lastUpdated": "2024-11-19",
+        "totalDiseases": 60,
+        "categories": [
+            "Respiratory",
+            "Neurological",
+            "Cardiovascular",
+            "Endocrine",
+            "Psychological",
+            "Autoimmune",
+            "Digestive",
+            "Systemic",
+            "Hematologic",
+            "Dermatological",
+            "Otolaryngological",
+            "Musculoskeletal",
+            "Ophthalmological",
+            "Renal"
+        ]
+    }
+}

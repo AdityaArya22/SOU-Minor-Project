@@ -6,9 +6,10 @@ import Step3 from '../MultistepForm/Step3';
 import Step4 from '../MultistepForm/Step4';
 import Step5 from '../MultistepForm/Step5'; // Import Step5 directly
 import { ChevronLeft } from 'lucide-react';
-import diseaseData from '../MultistepForm/diesease.json'; // Your disease data file
+import diseaseData from '../MultistepForm/diseases.json'; // Your disease data file
 import { useDispatch, useSelector } from 'react-redux';
-import { matchedSymtomps } from '../../SymtomsSlice';
+import { addSymptoms, matchedSymtomps } from '../../SymtomsSlice';
+
 const Symptoms = () => {
     const [currentStep, setCurrentStep] = useState(1);
     const [step1Selected, setStep1Selected] = useState(null);
@@ -63,17 +64,51 @@ const Symptoms = () => {
         setSelectedSymptoms(symptoms);
     };
 
-   const dieseases = diseaseData.relatedDiseases
+   const dieseases = diseaseData.diseases
    const dispatch = useDispatch()
    const state = useSelector(state => state.symptoms)
-    const handleSubmit =() =>{
-        console.log(state.symptoms);
-        const matched = dieseases.filter((diesease)=>
-            diesease.symptoms.some(symtom => state.symptoms.includes(symtom)))
-        dispatch(matchedSymtomps(matched))
-        navigate('/result')
-        
+   const handleSubmit = () => {
+    console.log(state.symptoms);
+
+    // Group diseases into exact and partial matches
+    const exactMatches = dieseases.filter((disease) => {
+        const matchedSymptoms = disease.commonSymptoms.filter((symptom) =>
+            state.symptoms.includes(symptom)
+        );
+        return matchedSymptoms.length >= 2; // At least two symptoms must overlap for exact match
+    });
+
+    const partialMatches = dieseases.filter((disease) => {
+        const matchedSymptoms = disease.commonSymptoms.filter((symptom) =>
+            state.symptoms.includes(symptom)
+        );
+        return matchedSymptoms.length > 0 && matchedSymptoms.length < 2; // One symptom overlaps
+    });
+
+    // Combine exact and partial matches
+    const allMatches = [...exactMatches, ...partialMatches];
+
+    if (allMatches.length > 0) {
+        // Sort diseases by number of matched symptoms in descending order
+        allMatches.sort((a, b) => {
+            const aMatches = a.commonSymptoms.filter((symptom) => state.symptoms.includes(symptom)).length;
+            const bMatches = b.commonSymptoms.filter((symptom) => state.symptoms.includes(symptom)).length;
+            return bMatches - aMatches; // Sort in descending order
+        });
+
+        // Take only the top 3 diseases
+        const top3Diseases = allMatches.slice(0, 3);
+
+        console.log("Top 3 Possible Diseases:", top3Diseases);
+        dispatch(matchedSymtomps(top3Diseases)); // Dispatch top 3 matched diseases
+
+        navigate('/result');
+    } else {
+        alert("No diseases found matching the selected symptoms.");
     }
+};
+
+
 
     return (
         <div className='min-h-screen bg-gradient-to-r from-[#859DBD] to-[#7e92e3] flex justify-center items-center py-8'>
