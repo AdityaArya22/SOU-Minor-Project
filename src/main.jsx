@@ -14,6 +14,7 @@ import './index.css'
 import { ClerkProvider } from '@clerk/clerk-react'
 import store from "./store.js"
 import { Provider } from 'react-redux'
+import NotFound from './Components/NotFound.jsx'
 
 // Import your publishable key
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
@@ -29,6 +30,7 @@ const router = createBrowserRouter(
     <Route path='symptoms' element={<Symptoms/>}/>
     <Route path='appointment' element={<Appointment/>}/>
     <Route path='result' element={<Results/>}/>
+    <Route path="*" element={<NotFound />} />
   </Route>
   )
 )
